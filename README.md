@@ -20,12 +20,10 @@ This version is a fork using GraphicsMagick instead of node-canvas.
 ## Example
 
 	var retricon = require('retricon');
-	var fmt = require('util').format;
 
-	console.log(fmt("<img alt='kibo' src='%s' />", retricon('kibo', {pixelSize: 16}).toDataURL()));
+	retricon('kibo', {pixelSize: 16}).write('out.png', function(err){if (err) console.log(err);});
 
 ### Output
-	<img alt='kibo' src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFAAAABQCAYAAACOEfKtAAAABmJLR0QA/wD/AP+gvaeTAAAA7UlEQVR4nO3asQ3CQBAAwX9kiVqogP5DV0AtRFDEBCfDTm6/vbrodfv5un/WoPPx3vL89PffJg//BQVEBUQFRAVEBUQFRAVEBUQFRAVEBUQFRAVEBUR7+j7t6ppAVEBUQFRAVEBUQFRAVEBUQFRAVEBUQFRAVEBUQES7eWv5ft70fqCe3wSiAqICogKiAqICogKiAqICogKiAqICogKiAqICouPf9wP1/5tAVEBUQFRAVEBUQFRAVEBUQFRAVEBUQFRAVEBUQHToC66+39d94LACogKiAqICogKiAqICogKiAqICogKiAqICogKiL2SGHPJ+jTmVAAAAAElFTkSuQmCC' />
 ![kibo](https://raw.github.com/sehrgut/node-retricon/master/examples/images/kibo.png)
 
 ## API
