@@ -13,6 +13,10 @@ create indenticon-like image hashes styled like [Github][ghid] and
 ![skull](https://raw.github.com/sehrgut/node-retricon/master/examples/images/07.png)
 ![frog](https://raw.github.com/sehrgut/node-retricon/master/examples/images/08.png)
 
+## GraphicsMagick version
+
+This version is a fork using GraphicsMagick instead of node-canvas.
+
 ## Example
 
 	var retricon = require('retricon');
