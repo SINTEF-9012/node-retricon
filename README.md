@@ -50,7 +50,7 @@ This version is a fork using GraphicsMagick instead of node-canvas.
 	* `pixelColor`: mixed (default: 0) - color to fill foreground tiles. All
 	  `bgColor` values are valid for `pixelColor`.
 
-Returns a `Canvas` object containing the rendered image.
+Returns a `gm` object containing the rendered image.
 
 ## Styles
 
